@@ -15,7 +15,7 @@ Module.register("MMM-FullCalendar",{
 
   getStyles: function() {
     return [
-      this.file('lib/fullCalendar.css'), // will try to load it from the vendor folder, otherwise it will load is from the module folder.
+      this.file('lib/fullcalendar.css'), // will try to load it from the vendor folder, otherwise it will load is from the module folder.
     ];
   },
 
