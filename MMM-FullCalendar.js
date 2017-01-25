@@ -8,8 +8,8 @@ Module.register("MMM-FullCalendar",{
     return [
       'moment.js', // this file is available in the vendor folder, so it doesn't need to be available in the module folder.
       'https://code.jquery.com/jquery-2.2.3.min.js',  // this file will be loaded from the jquery servers.
-      this.file('fullCalendar/fullCalendar.js'),
-      this.file('fullCalendar/gcal.js'),
+      this.file('/fullCalendar/fullCalendar.js'),
+      this.file('/fullCalendar/gcal.js'),
     ];
   },
 
