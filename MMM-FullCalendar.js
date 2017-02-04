@@ -16,6 +16,7 @@ Module.register("MMM-FullCalendar",{
   getStyles: function() {
     return [
       this.file('lib/fullcalendar.css'), // will try to load it from the vendor folder, otherwise it will load is from the module folder.
+      this.file('MMM-FullCalendar.css')
     ];
   },
 
@@ -34,14 +35,18 @@ Module.register("MMM-FullCalendar",{
   notificationReceived: function(notification, payload, sender) {
     if(notification === 'DOM_OBJECTS_CREATED'){
       $(document).ready(function() {
-        $('#fullCalendar').width('1050px');
-        $('#fullCalendar').fullCalendar(this.config);
+        var $calendar = $('#fullCalendar');
+        $calendar.width('1050px');
+        $calendar.fullCalendar(this.config);
 
 
         $(document).keydown(function(e) {
           var kod = e.which;
-          if (kod === 87/*w*/) $('#fullCalendar').fullCalendar('changeView', 'basicWeek');
-          if (kod === 77/*m*/) $('#fullCalendar').fullCalendar('changeView', 'month');
+          console.info(kod);
+          if (kod === 37/*<-*/) $calendar.fullCalendar('prev');
+          if (kod === 39/*->*/) $calendar.fullCalendar('next');
+          if (kod === 77/*m*/ || kod === 49/*1*/) $calendar.fullCalendar('changeView', 'month');
+          if (kod === 87/*w*/ || kod === 50/*2*/) $calendar.fullCalendar('changeView', 'basicWeek');
         }.bind(this));
 
       }.bind(this));

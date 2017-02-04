@@ -1,0 +1,9 @@
+.birthday-event {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+td.fc-today {
+  background: rgb(0, 67, 134) !important;
+}
