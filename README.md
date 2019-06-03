@@ -1,11 +1,8 @@
-# MMM-FullCalendar
-FullCalendar for the MagicMirror
+## MMM-FullCalendar
 
-
-
-# MMM-FullCalendar
 MagicMirror module for showing FullCalendar https://fullcalendar.io/ with your events. 
 > This is an extension to the [MagicMirror](https://github.com/MichMich/MagicMirror) project. 
+
 
 ## Installation
 Run these commands at the root of your magic mirror install.
