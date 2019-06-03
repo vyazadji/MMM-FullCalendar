@@ -4,7 +4,7 @@ FullCalendar for the MagicMirror
 
 
 # MMM-FullCalendar
-MagicMirror module for showing FullCalendar with your events 
+MagicMirror module for showing FullCalendar https://fullcalendar.io/ with your events. 
 > This is an extension to the [MagicMirror](https://github.com/MichMich/MagicMirror) project. 
 
 ## Installation
@@ -41,3 +41,4 @@ To use this module, add the following configuration block to the modules array i
 		},
 
 ```
+Where `config` contains configuration for FullCalendar https://fullcalendar.io/docs
